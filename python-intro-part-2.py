@@ -7,7 +7,7 @@ Created on Sat Feb  9 18:48:49 2019
 
 Intro to Python course. Part 2
 Lesson numbering began after the installation lesson.
-Covers functions to ?
+Covers functions and global and local variables
 """
 #lesson 10 functions
 
