@@ -59,6 +59,43 @@ def website(font='TNR',background_colour='white',fontsize,fontcolour):
     print('Font colour:',fontcolour)
 '''
 #lesson 12 global and local variables
+'''
+global variable: accessed anywhere, but cannot be modified locally
+local variable: accessed and modified in its local environment, can't be
+                applied outside of that environment
+'''
+x = 6 #this is the global variable
+def example():
+    z = 5 #this is the local variable
+    print (z)
+'''    
+print(z) 
+can't do this because z is limited to within its environment
+'''
+def example2():
+    z = 7
+    print(z)
+    y = x + 1 #you can ACCESS the global variable, but cannot export it
+    print (y) #creating y gets rid of the problem of the function modifying x
+    return y 
+x = example2()
+print(x)
+#BEST PRACTICE right here 
+#this redefines x properly
+'''
+global variables in functions are possible, 
+but not best practice because globals can get messy in complex scripts
+many employers want the cleanest code
+'''
+def example3():
+  global x #just because you can do it doesn't mean you should
+  x+=1
+  print(x)  
+ 
+'''
+example2 is the preferred method
+'''
 
+    
 
 
