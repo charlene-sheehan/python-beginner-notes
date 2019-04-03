@@ -8,7 +8,14 @@ Intro to Python course. Part 6
 Lesson numbering began after the installation lesson.
 Covers inputs and a little statistics, importing modules
 """
-#Lesson 19 Import Syntax
+#Lesson 19 Inputs and Import Syntax
+
+#raw input is just input in python3
+#how to get information from users!
+name = input('What is your name?: ')
+print('Hello', name)
+#add a space because the user will enter next to it.
+
 #import as!! So clutch to make code less redundant
 
 import statistics as s
