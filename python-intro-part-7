@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Mar 15 22:43:25 2019
+
+@author: ccsheehan
+Intro to Python course. Part 7
+Lesson numbering began after the installation lesson.
+Covers how to make your own modules
+"""
+#Lesson 20 Module Making - Part 2
+"""
+Now we are going to import the module into this script to continue the lesson.
+
+import python-intro-part-7-examplemodule
+
+python-intro-part-7-examplemodule.exampleFunc('test')
+
+This didn't work.
+Learned an important lesson: file name for a module cannot have the dashes
+""""
+'''
+#second attempt with new file name
+
+import examplemodule
+
+examplemodule.exampleFunc('this')
+
+#Nope, did not working. 
+#Generating the following error: SyntaxError: EOL while scanning string literal
+'''
+#Third time is the charm? 
+#There was no third time.
+'''
+So, for this to work you would have to add this to a local directory of python
+itself. Python looks for modules in the local directory, the lib (the default 
+packages), and then the packages folder (3rd party modules). 
+The instructor said that examplemodule should be copied into packages.
+
+
+Since I am working off of Anaconda, I don't have this process available to me. 
+This is a big advantage to downloading python to your computer 
+instead of running it through software, like I am doing. 
+Fortunately, Anaconda provides official documentation and tutorials from Python
+so I'll be able to retouch on how to do this later on if/when I need it later.
+'''
