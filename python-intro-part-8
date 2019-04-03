@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar 21 16:23:51 2019
+
+@author: ccsheehan
+Intro to Python course. Part 8
+Lesson numbering began after the installation lesson.
+Covers how to do error handling
+"""
+#Lesson 21: Error Handling
+'''
+Try and except are to prevent the program from just collapsing in an exception
+If you don't make an exception, you run the risk of that happening
+'''
+try:
+    #insert your stuff here
+    print('running the try')
+    print('5'+5) #this is to provoke an error
+
+except Exception as e:
+#I recommend that you run once here to experience what the error looks like
+   print(str(e))    
+   print ('Do more things...')
+    
+print('Code continues onward..')
+#E is a catchall. How can we do a specific type error? Comment out the previous exception.
+try:
+    #insert your stuff here
+    print('running the try')
+    print('5'+5) #this is to provoke an error
+except TypeError as t:
+    print(str(t))
+    print('TypeError triggered')
+    
+print('Rolling rolling rolling')
+#Can we run different exceptions? Try it out...
+
+try:
+    #insert your stuff here
+    print('running the try')
+    print('5'+5) #this is to provoke an error
+except NameError as n:
+    print(str(n))
+    print('NameError triggered')
+    
+#then, you add the general error below the specific exceptions
+try:
+    #insert your stuff here
+    print('running the try')
+    print('5'+5) #this is to provoke an error
+except Exception as e:
+    print(str(e))
+    print('General Exception')
+#You can customize the exception to guide the user to correct the behaviors
+
